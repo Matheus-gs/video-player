@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Video Player</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--  -->
+  </head>
+
+  <body>
+    <!-- Container -->
+    <div id="container">
+      <!-- Content -->
+      <div id="app">
+        <!-- Player -->
+        <div class="player">
+          <!-- Video Source -->
+          <video
+            src="http://files.cod3r.com.br/curso-web/video.mp4"
+            type="video/mp4"
+            id="my_video"
+          ></video>
+          <!-- Progress Bar -->
+          <div class="progress-bar"></div>
+        </div>
+
+        <!-- Controllers -->
+        <div class="controllers">
+          <!-- Time Stamp -->
+          <div class="video-timer">
+            <span class="current-time"></span>
+            <span class="time-left"></span>
+          </div>
+
+          <!-- Buttons -->
+          <div class="video_controllers">
+            <!-- Retroceed -->
+            <button id="retroceed_button">
+              <span class="material-icons">skip_previous</span>
+            </button>
+            <!-- Play/Pause/Replay -->
+            <button id="play_pause">
+              <span class="material-icons">
+                <!-- play_arrow -->
+              </span>
+            </button>
+            <!-- Advance -->
+            <button id="advance_button">
+              <span class="material-icons">skip_next</span>
+            </button>
+            <!-- FullScreen -->
+            <button id="fullscreen_button">
+              <span class="material-icons">fullscreen</span>
+            </button>
+          </div>
+
+          <!-- Audio Controller -->
+          <div class="audio_controller">
+            <input
+              type="range"
+              name="input"
+              value="100"
+              min="0"
+              max="1"
+              step="0.01"
+              id="range"
+            />
+            <!-- Volume Stamp -->
+            <span class="volume_level"> 100%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
