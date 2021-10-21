@@ -6,4 +6,4 @@
 
 🕵🏽‍♂️ Take a look at: [GitHub Pages](https://matheus-gs.github.io/video-player/)
 
-🙋🏽‍♂️ Feel free to use some insights on your projects!
+🙋🏽‍♂️ Feel free to use some insights in your projects!
